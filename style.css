@@ -1,0 +1,365 @@
+body{
+    display: none;
+}
+
+#intro{
+    font-family: 'Montserrat';
+    font-size: 325%;
+    text-align: center;
+    width: 100%;
+    margin-bottom: -40px;
+}
+
+#intro h6{
+    
+    font-family: 'Montserrat';
+    font-size: 30px;
+    padding-top: 100px;
+    margin-bottom: -55px;
+}
+
+p{
+    padding: 1% 0 1%;
+    margin: auto;
+    width: 80%;
+}
+
+h6{
+    font-size: 50px;
+    padding-top: 4%;
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+
+.linkMenu{
+    
+    width: 90%;
+    text-align: center;
+    padding-top: 1%;
+    margin: auto;
+}
+
+.links{ 
+    text-align: center;
+    display: inline-block;
+    padding: 3%;
+    width: 80%;
+    margin: auto;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    
+    transition: all 0.5s ease-out;
+}
+
+.links:hover .shortcut{ 
+    opacity: 0.5; 
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    
+    transition: all 0.5s ease;
+}
+
+.tooltiptext{
+    
+    visibility: visible;
+    position: absolute;
+    font-family: 'Montserrat';
+    width: 110px;
+    background-color: #323232;
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 25px;
+    margin-left: -55px;
+    
+    opacity: 0;
+    bottom: 105%;
+    transition: opacity 0.3s ease, bottom 0.25s ease-in-out;
+    
+}
+
+.tooltiptext::after{
+    
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #323232 transparent transparent transparent;
+}
+
+.shortcut{
+    display: inline-block;
+    position: relative;
+    margin: 0 5%;
+    
+    transition: opacity 0.5s ease;
+}
+
+.shortcutIcons{ width: 55px;}
+
+.links:hover .shortcut:hover{
+    opacity: 1;
+}
+
+.links:hover .shortcut:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+    bottom: 115%;
+}
+
+.links:hover #aboutMeShortcut:hover{
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.links:hover #aboutMeShortcut:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+    bottom: 112.5%;
+}
+
+.links:hover #contactMeShortcut:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+    bottom: 127%;
+}
+
+#welcome, #whoAmI{
+    padding-bottom: 2.5%;
+    margin-top: -35px;
+    font-family: 'Montserrat';
+    font-size: 135%;
+}
+
+.about, #mailMe{
+    text-align: center;
+    width: 100%;
+    color: whitesmoke;
+    font-family: 'Montserrat';
+    height: 40%;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+#introDivider{
+    width: 100%; 
+    text-align: center; 
+    padding: 2% 0 6%;
+}
+
+#selfPortrait{
+    margin-bottom: auto;
+    padding: 0 6% 0;
+    width: 300px; 
+    border-radius: 50%;
+}
+
+#selfIntroduction{
+    background-color: rgba(25,25,112,0.25);
+    width: 50%;
+    display: inline-block;
+    border-radius: 20px;
+    
+}
+
+.cv{
+    background-color: rgba(128,0,128,0.75);
+    text-align: center;
+    width: 100%;
+    color: whitesmoke;
+    font-family: 'Montserrat';
+    height: 40%;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.sections{
+    align-items: center; 
+    margin: auto;
+    padding: 1% 0 1%;
+    width: 100%;
+    
+}
+
+.skillSection{
+    
+    padding: 2% 5%;
+    background-color: rgba(25,25,112,0.25);
+    border-radius: 20px;
+    height: 100%;
+    display: inline-block;
+}
+
+.skillSection p{ text-shadow: 0px 0px 10px #000000;}
+
+.resumeSection{
+    
+    text-align: center;
+    padding: 0 2.5%;
+    display: inline-block;
+}
+
+#resumeDownload a{
+    
+    color: white;
+    text-decoration: none;
+    background: #1db954;
+    padding: 2% 4%;
+    border-radius: 100px;
+    border: solid whitesmoke 1px;
+    
+    transition: color 0.5s, background 0.5s, border 0.5s;
+    
+}
+
+#resumeDownload a:hover{
+    
+    color: #1db954;
+    background: whitesmoke;
+
+}
+#resumeDownload{
+    
+    padding-top: 5%;
+    text-align: center;
+}
+
+.linguistics{
+    
+    background-color: #C0C0C0;
+    width: 300px;
+    border-radius: 100px;
+    height: 22.5px;
+    border: solid #f5f5f5 5px;
+}
+
+.linguisticProficiency{
+    
+    background-color: #005d73;
+    color: whitesmoke;
+    font-size:80%;
+    text-align: left;
+    height: 22.5px;
+    border-radius: 100px;
+}
+.contactcontent{
+    padding: 1% 0% 4% 0%;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.contactcontent p{
+    padding: 6% 0%;
+    width: 100%;
+
+}
+
+.codingExperiences{ max-height: 150px; max-width: 150px;}
+
+.skillSection li{
+    display: inline-block; 
+    padding: 1% 2.5%;
+    position: relative;
+    width: 150px;
+}
+
+.skillSection li p{
+    width: auto;
+    border-radius: 10px;
+    padding: 2.5% 5%;
+}
+
+.inputs{
+    width: 40%;
+    position:relative;
+    padding: 10px 15px;
+    font-family: 'Montserrat';
+    border: none;
+    border-radius: 10px;
+    font-size: 85%;
+    margin 10px;
+    border-bottom: 7.5px solid #D3D3D3;
+    outline: none;
+    
+    transition: border-bottom ease-in-out 0.3s;
+    -webkit-transition: border-bottom ease-in-out 0.3s;
+    -moz-transition: border-bottom ease-in-out 0.3s;
+    -o-transition: border-bottom ease-in-out 0.3s;
+}
+
+label{display: block; width:100px; text-align: left; margin-left: 29.5%;}
+
+.inputs:focus, textarea:focus{ border-bottom: 7.5px solid #E44766;}
+
+textarea{
+    position:relative;
+    padding: 10px 15px;
+    font-family: 'Montserrat';
+    border: none;
+    border-radius: 10px;
+    font-size: 85%;
+    margin 10px;
+    border-bottom: 7.5px solid #D3D3D3;
+    outline: none;
+    resize: vertical;
+    
+    transition: border-bottom ease-in-out 0.3s;
+    -webkit-transition: border-bottom ease-in-out 0.3s;
+    -moz-transition: border-bottom ease-in-out 0.3s;
+    -o-transition: border-bottom ease-in-out 0.3s;
+}
+
+#submitMail{
+    color: whitesmoke;
+    width: 12.5%;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 85%;
+    background: #E44766;
+    padding: 0.5% 2%;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+}
+
+#submitMail:hover{
+    background: #FF819B;
+    cursor: pointer;
+}
+
+#backToTop img{
+    
+    padding: 2% 0 0 0;
+    max-width: 55px;
+    opacity: 1;
+    backface-visibility: hidden; /*Prevent img from moving when hovering*/
+    
+    transition: opacity 0.5s;
+}
+
+#backToTop img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.footer{
+    
+    position: absolute;
+    text-align: center;
+    line-height: 1.5;
+    font-family: 'Montserrat';
+    color: white;
+    background-color: #363636ff;
+    left: 0;
+    height: 150px;
+    width: 100%;
+}

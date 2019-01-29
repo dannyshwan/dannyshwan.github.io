@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <title>Daniel Shwan</title>
+        <link rel="icon" href="icons/favicon.png"/>
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+    
+	<body style="background-color:whitesmoke">
+        <div class='home'>
+            <div id="intro">
+                <h6>Hi, I'm</h6>
+                <h1>Daniel Shwan</h1>
+            </div>
+
+            <div class="linkMenu">
+                <p id='welcome'>- Welcome To My Website - </p>
+                <div class="links" align='center'>
+                    <a class="shortcut" href="https://github.com/dannyshwan"><img class='shortcutIcons' src="icons/github.png">
+                        <span class="tooltiptext">GitHub</span>
+                    </a>
+
+                    <a class="shortcut" href="https://www.linkedin.com/in/daniel-shwan-1b0201156/"><img class='shortcutIcons' src="icons/linkedin.png">
+                        <span class="tooltiptext">LinkedIn</span>
+                    </a> 
+
+                    <a class="shortcut" id='aboutMeShortcut' href="#about">
+                        <img src="icons/about.png" style="width:70px">
+                        <span class="tooltiptext">About Me</span>
+                    </a>
+
+                    <a class="shortcut" href="#cv"><img src="icons/resume.png" style="width:47px; height:55px">
+                        <span class="tooltiptext">Resume</span>
+                    </a>        
+
+                    <a class="shortcut" id='contactMeShortcut' href='#mailMe'><img src="icons/contact.png" style="width:60px; height:50px">
+                        <span class="tooltiptext">Contact</span>
+                    </a>
+                </div>
+            </div>
+            <!--
+            <div id='whoAmI' style='margin:auto; text-align: center; padding-top: 2%;'>
+                <p style='font-size: 120%;'> I am:</p>
+            </div>
+            -->
+        </div>
+        
+        <br><br><br><br><br><br>
+        
+        <div class='about' id='about' style='background-color: #E44766;'>
+            <h6> A b o u t <hr style="width: 140px; margin:auto;"></h6>
+            <div id='introDivider'>
+                <img id='selfPortrait' src='src/PicOfMe.jpg'>
+                <div id='selfIntroduction'>
+                    <p style='padding-top: 4%'> Hey there, I'm Daniel ✌️! I'm a Computer Engineering student currently studying 
+                    at the University of Ottawa.</p>
+
+                    <p> I have a passion for technology, design, and exploring new innovative ideas; aiming to help build technology to further improve the lives of those around me! I'm also interested in robotics, photoshop, UI/UX, and as well as Android mobile development.</p>
+
+                    <p style='padding-bottom: 4%'>I'm always open to meeting new people and seeking new opportunites to learn and expand what I know! Feel free to contact me!</p>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        <div class='cv' id='cv'>
+            <h6> Curriculum Vitae <hr style="width: 300px; margin:auto; color:#E44766"></h6>
+            <div class='sections' style='padding-bottom: 2%;'>
+                <div class='resumeSection'>
+                    <div>
+                        <img src='src/CV.png' style='width: 300px; border-radius: 3px; box-shadow: 0 0 10px #000000;'>
+                    </div>
+                    <div id='resumeDownload'>
+                          <a href='src/CV.pdf' download>🙏 Download Resume 🙏</a>
+                    </div>
+                </div>
+                
+                <div class='skillSection' style='line-height: 1.9;'>
+                    <h2 style='margin-top: 0;'>Linguistics</h2>
+                    
+                    <p>English</p>
+                    <div class='linguistics'><div class='linguisticProficiency' style='width:90%;'></div></div><br>
+
+                    <p>French</p>
+                    <div class='linguistics'><div class='linguisticProficiency' style='width:55%;'></div></div><br>
+                            
+                    <p>Mandarin</p>
+                    <div class='linguistics'><div class='linguisticProficiency' style='width:20%;'></div></div><br>
+                </div>
+            </div>
+            
+            <div style='padding-bottom: 4%'>
+                <h1>I have experience with:</h1>
+                <div class='skillSection' align='center' style='width: 85%'>
+                    <ul style='display: inline-block; width: 100%; padding: 0%'>
+                        <li style='text-align: center;'><img class='codingExperiences' src='icons/java.png'><p>Java</p></li>
+                        <li><img class='codingExperiences' src='icons/python.png'><p>Python</p></li>
+                        <li><img class='codingExperiences' src='icons/firebase.png'><p>Firebase</p></li>
+                        <li><img class='codingExperiences' src='icons/android.png'><p>Android</p></li>
+                        <li><img class='codingExperiences' src='icons/javascript.png'><p>JavaScript</p></li>
+                        <li><img class='codingExperiences' src='icons/git.png'><p>Git</p></li>
+                        <li><img class='codingExperiences' src='icons/html5.png'><p>HTML</p></li>
+                        <li><img class='codingExperiences' src='icons/css3.png'><p>CSS</p></li>
+                        <li><img class='codingExperiences' src='icons/cpp.png'><p>C++</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        
+        <div id='mailMe' style='background-color:#008080;'>
+            <h6> Contact Me! <hr style="width: 225px; margin:auto;"></h6>
+            <h1>🚧 FEATURE STILL IN DEVELOPMENT 🚧</h1>
+            <form id='mailForm' style='padding-bottom: 5%; text-align: center;' action="/send_email.php" method="post">
+                    
+                <label>Email</label>
+                <input class='inputs' name='email' placeholder="Email" type='email'><br><br>
+                    
+                <label>Subject</label>
+                <input class='inputs' name='subject' placeholder="Subject" type='text'><br><br>
+                   
+                <label>Message</label>
+                <textarea name='message' rows='5' cols='54' placeholder="Message" type='text'></textarea><br><br>
+                    
+                <button id='submitMail' name='send'>Send</button>
+            </form>
+        </div>
+        
+        <br>
+        <div class="footer">
+            <a id='backToTop'><img src='icons/back-to-top-white.png'></a>
+            <p>Copyright © Daniel Shwan 2018</p>
+        </div>
+        
+        <script src='script.js' rel='javascript'></script>
+	</body>
+</html>
